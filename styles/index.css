@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+p {
+    color: blue;
+}
+
+#first-p-tag {
+    /* code goes here */
+    height: 50vh;
+    background: yellow;
+}
+
+.im-the-favorite {
+    /* code goes here */
+}
+
+main section p {
+    /* code goes here */
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+nav{
+    background-color:rgb(50, 50, 202);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:rgb(240, 231, 231);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(238, 221, 221);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    background: #3892d6;
+    transition: .55s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(221, 208, 208);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;
+}
+#check{
+    display: none;
+}
+.ielogo img{
+    float: left;
+    padding:29px 0px 0px 10px;
+    height:53px;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size:30px;
+       
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+    .ielogo img{
+        
+        height: 51px;
+        padding:30px 0px 0px 50px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3b5a79;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0b7cd3;
+
+    }
+    #check:checked ~ ul{
+        left: 0;
+
+    }
+}
+section{
+    background:url(https://wallpapersafari.com/image/hd-navy-wallpaper.jpg) no-repeat;
+    background-size:cover;
+    height:calc(100vh - 80px);
+}
